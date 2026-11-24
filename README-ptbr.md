@@ -34,6 +34,26 @@ irm https://raw.githubusercontent.com/sr00t3d/scoreboard/main/scoreboard.ps1 -Ou
 
 ---
 
+## Exemplo de Saída Real
+
+```text
+==================================================================================================
+ scoreboard.sh v2.0.0 | Source: http://127.0.0.1:18902/whm-server-status | 2026-11-24T03:13:56Z
+==================================================================================================
+Workers: Busy=9  Idle=1  Busy%=90.0%  Req/s=42.5  Parsed=3  Matched=3
+Top Client IPs: 198.51.100.10 (2) | 203.0.113.55 (1)
+Top VHosts:     sitea.com:443 (2) | siteb.com:80 (1)
+Top Requests:   POST /wp-login.php (2) | GET /index.php?p=1 (1)
+--------------------------------------------------------------------------------------------------
+PID   M  SS(s)  CPU   CLIENT_IP      VHOST          REQUEST
+----  -  -----  ----  -------------  -------------  ------------------
+1011  W  45     1.25  198.51.100.10  sitea.com:443  POST /wp-login.php
+1012  W  12     0.40  198.51.100.10  sitea.com:443  POST /wp-login.php
+1013  R  2      0.10  203.0.113.55   siteb.com:80   GET /index.php?p=1
+```
+
+---
+
 ## Licença
 
 Distribuído sob a licença [Apache License 2.0](LICENSE).
